@@ -39,4 +39,10 @@
 		<item value="org.jboss.tools.runtime.core.feature:3.5.300.v20220704-1257"/>
 		<item value="org.jboss.tools.stacks.core.feature:1.4.200.v20210628-0724"/>
 	</list>
+	<section name="CleanDialogSettings">
+		<item key="TOGGLE_SELECTED" value="true"/>
+		<item key="DIALOG_WIDTH" value="741"/>
+		<item key="DIALOG_HEIGHT" value="429"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
 </section>
