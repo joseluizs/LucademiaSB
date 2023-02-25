@@ -68,6 +68,12 @@ public class Aluno {
 	public void setTelefone(Telefone telefone) {
 		this.telefone = telefone;
 	}
+	@Override
+	public String toString() {
+		return "Aluno [matricula=" + matricula + ", nome=" + nome + ", sexo=" + sexo + ", rg=" + rg
+				+ ", dataNascimento=" + dataNascimento + ", situacao=" + situacao + ", endereco=" + endereco
+				+ ", telefone=" + telefone + "]";
+	}
 	
 
 }

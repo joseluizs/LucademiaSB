@@ -34,6 +34,10 @@ public class Acesso {
 	public void setSaida(LocalDateTime saida) {
 		this.saida = saida;
 	}
+	@Override
+	public String toString() {
+		return "Acesso [id=" + id + ", aluno=" + aluno + ", entrada=" + entrada + ", saida=" + saida + "]";
+	}
 	
 	
 

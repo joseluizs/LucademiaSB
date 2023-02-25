@@ -30,6 +30,11 @@ public class Telefone {
 	public void setNumeroFixo(Integer numeroFixo) {
 		this.numeroFixo = numeroFixo;
 	}
+	@Override
+	public String toString() {
+		return "Telefone [dddCelular=" + dddCelular + ", numeroCelular=" + numeroCelular + ", dddFixo=" + dddFixo
+				+ ", numeroFixo=" + numeroFixo + "]";
+	}
 	
 	
 
