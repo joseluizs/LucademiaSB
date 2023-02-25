@@ -1,6 +1,7 @@
 package br.com.luiz.loucademia.domain.aluno;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Aluno {
 	
@@ -73,6 +74,21 @@ public class Aluno {
 		return "Aluno [matricula=" + matricula + ", nome=" + nome + ", sexo=" + sexo + ", rg=" + rg
 				+ ", dataNascimento=" + dataNascimento + ", situacao=" + situacao + ", endereco=" + endereco
 				+ ", telefone=" + telefone + "]";
+	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(matricula);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Aluno other = (Aluno) obj;
+		return Objects.equals(matricula, other.matricula);
 	}
 	
 
