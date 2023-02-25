@@ -1,11 +1,22 @@
 package br.com.luiz.loucademia.domain.aluno;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Estado {
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+@Entity
+@Table(name = "ESTADO")
+public class Estado implements Serializable{
+
+	@Id
+	@Column(name = "SIGLA", nullable = false, length = 2)
 	private String sigla;
 	
+	@Column(name = "NOME", nullable = false, length = 30)
 	private String nome;
 	
 	public String getSigla() {
